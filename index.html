@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landa Rashmi | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<canvas id="starCanvas"></canvas>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar">
+    <div class="nav-left">
+  <strong id="logo">Landa Rashmi</strong>
+</div>
+
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+      <a href="#projects">Projects</a>
+      <a href="#coding">Coding</a>
+
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#education">Education</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="RASHMI LANDA.pdf" download class="resume-btn">📄 Resume</a>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm Rashmi</h1>
+      <p>Web Developer • Programmer • Tech Explorer</p>
+    </div>
+  </section>
+
+  <!-- FULLSCREEN TABS AS SECTIONS -->
+  <main class="fullscreen-tabs">
+
+    <!-- ABOUT -->
+    <section id="about" class="tab-section">
+      
+      <p>
+        <h2>About Me</h2>
+        I’m a passionate web developer and programmer with a strong foundation in data structures and algorithms. <br>
+        I enjoy building responsive and accessible web apps, solving real-world problems with code, and exploring new technologies. <br>
+        Currently pursuing my B.Tech in Computer Science, I strive to continuously learn and improve.
+      </p>
+    </section>
+
+    <!-- INTERESTS -->
+    <section id="interests" class="tab-section">
+      
+      <ul class="interest-list">
+        <h2>My Interests</h2>
+        <li>💡 Web Development</li>
+        <li>🎨 UI/UX Design</li>
+        <li>🚀 Competitive Programming</li>
+        <li>📚 Reading Tech Blogs</li>
+        <li>🎮 Game Design</li>
+        <li>🌍 Tech for Social Good</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="tab-section">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card" onclick="openProject('https://github.com/LandaRashmi/Smart-Water-Meter-System')">
+          <img src="waters.jpeg" alt="Smart Water Meter">
+          <div class="info">
+            <h3>Smart Water Meter</h3>
+            <p>Smart Water Meter System is a digital platform that tracks household water usage in real-time without hardware. It provides alerts for overuse or leaks, offers weekly reports, and shares water-saving tips through a mobile-friendly interface.</p>
+          </div>
+        </div>
+        <div class="project-card" onclick="openProject('https://github.com/LandaRashmi/Color-Detection')">
+          <img src="colorDetection.png" alt="True Vision">
+          <div class="info">
+            <h3>True Vision</h3>
+            <p>TrueVision is a smart web app that helps people with color vision deficiency see and understand colors better. It also supports artists with accurate color detection and analysis, making everyday tasks and creative work easier and more accessible.</p>
+          </div>
+        </div>
+        <div class="project-card" onclick="openProject('https://github.com/LandaRashmi/AntidoteHub')">
+          <img src="antidoteHub.png" alt="AntidoteHub">
+          <div class="info">
+            <h3>AntidoteHub</h3>
+            <p>AntidoteHub is a platform that shows real-time antidote availability and helps users find the nearest pharmacy during emergencies.</p>
+          </div>
+        </div>
+        <div class="project-card" onclick="openProject('https://github.com/LandaRashmi/Amazon_Clone')">
+          <img src="amazon.png" alt="Simple Amazon Clone">
+          <div class="info">
+            <h3>Simple Amazon Clone</h3>
+            <p>A simple e-commerce website inspired by Amazon, built using HTML, CSS, and JavaScript. Features include product categories, login, add to cart, product details, and a shopping cart page — all fully functional using localStorage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="coding" class="tab-section">
+  <h2>My Coding Profiles</h2>
+  <div class="coding-grid">
+    <div class="coding-card" onclick="window.open('https://leetcode.com/u/rashmilanda/')">
+      <h3>LeetCode</h3>
+      <p>150+ Problems</p>
+    </div>
+    <div class="coding-card" onclick="window.open('https://codeforces.com/profile/rashmilanda')">
+      <h3>Codeforces</h3>
+      <p>Rating: 361</p>
+    </div>
+    <div class="coding-card" onclick="window.open('https://www.codechef.com/users/rashmilanda')">
+      <h3>CodeChef</h3>
+      <p>2★ Coder</p>
+    </div>
+    <div class="coding-card" onclick="window.open('https://github.com/LandaRashmi')">
+      <h3>GitHub</h3>
+      <p>20+ Repositories</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="tab-section">
+      
+      <ul class="skill-list">
+        <h2>Skills</h2>
+        <li>Python, C, C++</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Teamwork & Leadership</li>
+        <li>Problem Solving</li>
+        <li>Project Management</li>
+      </ul>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="tab-section">
+      <h2>Certifications</h2>
+      <div class="timeline">
+        <div class="timeline-item cert-item">
+          <span>2024</span>
+          <h3>Full Stack Web Development</h3>
+          <p>Skolar | Built full-stack apps using React, Node.js</p>
+        </div>
+        <div class="timeline-item cert-item">
+          <span>2023</span>
+          <h3>Python Essentials</h3>
+          <p>Cisco | Mastered core programming with Python</p>
+        </div>
+        <div class="timeline-item cert-item">
+          <span>2023</span>
+          <h3>Salesforce AgentBlazer Champion</h3>
+          <p>Recognized for outstanding performance in Salesforce trailheads</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="tab-section">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item edu-item">
+          <span>2022 - 2026</span>
+          <h3>B.Tech in CSE</h3>
+          <p>Vignan’s Institute of Information Technology, CGPA: 9.2/10</p>
+        </div>
+        <div class="timeline-item edu-item">
+          <span>2020 - 2022</span>
+          <h3>Intermediate (MPC)</h3>
+          <p>Gowthami Junior College — 965/1000</p>
+        </div>
+        <div class="timeline-item edu-item">
+          <span>2020</span>
+          <h3>High School</h3>
+          <p>Bhashyam High School — 600/600</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+<button id="scrollTopBtn" title="Go to top">⬆️</button>
+  <!-- FOOTER -->
+  <footer>
+    <p>📞 +91 8638491963 | 📧 rashmilanda@gmail.com | 🌍 Vishakapatnam, India</p>
+    <p>© 2025 Landa Rashmi. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  
+
+</body>
+</html>
